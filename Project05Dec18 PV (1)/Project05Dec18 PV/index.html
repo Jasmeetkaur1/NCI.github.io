@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+<head>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--title-->
+
+	<!--content-->
+	<meta charset="UTF-8"> <!-- HTML5 charset -->
+
+	<title>NCI Shopping Centre</title>
+
+	 <!--search optimisation-->
+	 <meta name="description" content="NCI Shopping Centre: the happiest place on Earth!">
+
+	 <!--this will be the link to the site.-->
+	 <link rel="canonical" href="index.html"/>
+
+	 <!--responsiveness-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	 <!--link to css-->
+	 <link rel="stylesheet" href="projectstyles.css" type="text/css"/>
+
+	 <!--bootstrap links-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="main"> <!--The actual Webpage-->
+
+<!--logo in top left-->
+  <div class="logo">
+    <a href="index.html" title="NCI Shopping Centre" >
+      <img src="images/logo.png" alt="logo"/> <!-- Couldnt get the owl to stay small when using external-->
+    </a>
+  </div>
+
+<!--heading, banner, and search bar-->
+  <div class="head">
+    <div class="header">
+			</br>
+			<h1>NCI Shopping Centre</h1>
+		</div>
+    <div class="search_bar">
+	<span>Anything we can help you find?</span>
+      <form class="search" action="index.html" method="get" name="search_form">
+        <input placeholder="e.g.Cinema times" type="text" class="input_one" name="search_site"/>
+        <input type="submit" value="Search" class="search_button"/>
+      </form>
+    </div>
+	</div>
+
+  <!--horizontal navigation bar-->
+	<div class="topnav" id="myTopnav">
+		<a class="active" href="index.html"> Home</a>
+		<a href="shops.html">Shops</a>
+		<a href="cinema.html">Cinema</a>
+		<a href="Offers.html">Special Offers</a>
+		<a href="Newsletter.html">Newsletter</a>
+		<a href="map.html">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  	<i class="fa fa-bars"></i>
+	</div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<!-- inputting code to make a slide show, had issues, where the image will stay for the 1.5s but will not go to the next image, code gotten from w3 schools-->
+	<!-- Slideshow container -->
+
+	<div class="slideshow-container">
+  	<!-- Full-width images with number and caption text -->
+	  <span class="mySlides fade">
+			<img src="images/drive.png" alt="Christmas Decoration on snow">
+	  </span>
+	  <span class="mySlides fade">
+			<img src="images/gift.png" alt="Buy a gift for the one you love this christmas">
+	  </span>
+	  <span class="mySlides fade">
+			<img src="images/christmas.jpg" alt="Please drive safe this christmas">
+	  </span>
+	</div>
+
+	<script>
+
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
+		}
+	</script>
+
+<!--footer, with how to find us and other-->
+<div class="container"></div>
+<div class="footer">
+
+		<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
+		<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
+		<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
+		<div class="col-sm-2"><a href="#Customer Services">Customer Services</a></div>
+		<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
+		<div class="col-sm-2"><a href="#Delivery & Collection">Delivery & Collection</a></div>
+
+</div>
+
+<hr />
+<p class="copyright">&copy; 2018 NCI Shopping Center<br />(Ireland) Limited </p> <!--making use of the charset for the copyright symbol-->
+
+</body>
+
+</html>

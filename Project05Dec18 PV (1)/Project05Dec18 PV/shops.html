@@ -1,0 +1,197 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+<head>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--title-->
+
+	<!--content-->
+	<meta charset="UTF-8"> <!-- HTML5 charset -->
+
+	<title>NCI Shopping Centre</title>
+
+	 <!--search optimisation-->
+	 <meta name="description" content="NCI Shopping Centre: the happiest place on Earth!">
+
+	 <!--this will be the link to the site.-->
+	 <link rel="canonical" href="index.html"/>
+
+	 <!--responsiveness-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	 <!--link to css-->
+	 <link rel="stylesheet" href="projectstyles.css" type="text/css"/>
+
+	 <!--bootstrap links-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="main"> <!--The actual Webpage-->
+
+<!--logo in top left-->
+  <div class="logo">
+    <a href="index.html" title="NCI Shopping Centre" >
+      <img src="images/logo.png" alt="logo"/> <!-- Couldnt get the owl to stay small when using external-->
+    </a>
+  </div>
+
+<!--heading, banner, and search bar-->
+  <div class="head">
+    <div class="header">
+			</br>
+			<h1>NCI Shopping Centre</h1>
+		</div>
+    <div class="search_bar">
+	<span>Anything we can help you find?</span>
+      <form class="search" action="index.html" method="get" name="search_form">
+        <input placeholder="e.g.Cinema times" type="text" class="input_one" name="search_site"/>
+        <input type="submit" value="Search" class="search_button"/>
+      </form>
+    </div>
+	</div>
+
+  <!--horizontal navigation bar-->
+	<div class="topnav" id="myTopnav">
+		<a href="index.html"> Home</a>
+		<a class="active" href="shops.html">Shops</a>
+		<a href="cinema.html">Cinema</a>
+		<a href="Offers.html">Special Offers</a>
+		<a href="Newsletter.html">Newsletter</a>
+		<a href="map.html">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  	<i class="fa fa-bars"></i>
+	</div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<!--left panel, including the social media links and opening hours-->
+	<div class="social_media">
+		<a class="facebook" href="http://www.facebook.com" title="facebook link">
+			<img src="images/facebook.png" alt="facebooklink"/>
+		</a>
+		<a class="twitter" href="http://www.twitter.com" title="twitter link">
+			<img src="images/twitter.png" alt="twitterlink"/>
+		</a>
+		<a href="https://www.instagram.com/ncirl/" title="Instagram link">
+			<img src="images/instagram.png" alt="instagram link"/>
+		</a>
+	</div>
+
+  <div class="left_panel">
+
+    <div class="opening_hours">
+			<h4>Opening Hours</h4>
+      <span class='left'>Monday</span>
+      <span class='right'>9am - 9pm</span>
+      <br/>
+      <span class='left'>Tuesday</span>
+      <span class='right'>9am - 9pm</span>
+      <br/>
+      <span class='left'>Wednesday</span>
+      <span class='right'>9am - 9pm</span>
+      <br/>
+      <span class='left'>Thursday</span>
+      <span class='right'>9am - 10pm</span>
+      <br/>
+      <span class='left'>Friday</span>
+      <span class='right'>9am - 9pm</span>
+      <br/>
+      <span class='left'>Saturday</span>
+      <span class='right'>9am - 7pm</span>
+      <br/>
+      <span class='left'>Sunday/BH</span>
+      <span class='right'>9am - 7pm</span>
+      <br/>
+    </div>
+  </div>
+
+  <div class="shop_container">
+  <div class="shop-item">
+	</br>
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 1.jpg" alt="shop_one"/>
+	</a>
+	</div>
+	<div class="shop-item">
+      <a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 2.jpg" alt="shop_two"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 3.jpg" alt="shop_three"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	</br>
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 4.jpg" alt="shop_four"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 5.jpg" alt="shop_five"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	</br>
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 6.jpg" alt="shop_six"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	</br>
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 7.jpg" alt="shop_seven"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 8.jpg" alt="shop_eight"/>
+	</a>
+	</div>
+	<div class="shop-item">
+	<a class="img" href="index.html" title="shop_one">
+      <img class="advert" src="images/store 9.jpg" alt="shop_nine"/>
+	</a>
+	</div>
+	</div>
+
+	<!--footer, with how to find us and other-->
+	<div class="container"></div>
+	<div class="footer">
+
+			<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
+			<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
+			<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
+			<div class="col-sm-2"><a href="#Customer Services">Customer Services</a></div>
+			<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
+			<div class="col-sm-2"><a href="#Delivery & Collection">Delivery & Collection</a></div>
+
+	</div>
+
+	<hr />
+	<p class="copyright">&copy; 2018 NCI Shopping Center<br />(Ireland) Limited </p> <!--making use of the charset for the copyright symbol-->
+
+	</body>
+
+</html>

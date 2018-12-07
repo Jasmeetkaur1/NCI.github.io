@@ -1,0 +1,257 @@
+<!--Map page completed by Fiaah Heffernan-->
+
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+<head>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--title-->
+
+	<!--content-->
+	<meta charset="UTF-8"> <!-- HTML5 charset -->
+
+	<title>NCI Shopping Centre</title>
+
+	 <!--search optimisation-->
+	 <meta name="description" content="NCI Shopping Centre: the happiest place on Earth!">
+
+	 <!--this will be the link to the site.-->
+	 <link rel="canonical" href="index.html"/>
+
+	 <!--responsiveness-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	 <!--link to css-->
+	 <link rel="stylesheet" href="projectstylesmap.css" type="text/css"/>
+	 <link rel="stylesheet" href="projectstyles.css" type="text/css"/>
+
+	 <!--bootstrap links-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="main"> <!--The actual Webpage-->
+
+<!--logo in top left-->
+  <div class="logo">
+    <a href="index.html" title="NCI Shopping Centre" >
+      <img src="images/logo.png" alt="logo"/> <!-- Couldnt get the owl to stay small when using external-->
+    </a>
+  </div>
+
+<!--heading, banner, and search bar-->
+  <div class="head">
+    <div class="header">
+			</br>
+			<h1>NCI Shopping Centre</h1>
+		</div>
+    <div class="search_bar">
+	<span>Anything we can help you find?</span>
+      <form class="search" action="index.html" method="get" name="search_form">
+        <input placeholder="e.g.Cinema times" type="text" class="input_one" name="search_site"/>
+        <input type="submit" value="Search" class="search_button"/>
+      </form>
+    </div>
+	</div>
+
+  <!--horizontal navigation bar-->
+	<div class="topnav" id="myTopnav">
+		<a href="index.html"> Home</a>
+		<a href="shops.html">Shops</a>
+		<a href="cinema.html">Cinema</a>
+		<a href="Offers.html">Special Offers</a>
+		<a href="Newsletter.html">Newsletter</a>
+		<a class="active" href="map.html">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  	<i class="fa fa-bars"></i>
+	</div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+  	<!--main panel, with advertising section and links-->
+		<div class="social_media">
+			<a class="facebook" href="http://www.facebook.com" title="facebook link">
+				<img src="images/facebook.png" alt="facebooklink"/>
+			</a>
+			<a class="twitter" href="http://www.twitter.com" title="twitter link">
+				<img src="images/twitter.png" alt="twitterlink"/>
+			</a>
+			<a href="https://www.instagram.com/ncirl/" title="Instagram link">
+				<img src="images/instagram.png" alt="instagram link"/>
+			</a>
+		</div>
+
+	  <div class="left_panel">
+
+	    <div class="opening_hours">
+				<h4>Opening Hours</h4>
+	      <span class='left'>Monday</span>
+	      <span class='right'>9am - 9pm</span>
+	      <br/>
+	      <span class='left'>Tuesday</span>
+	      <span class='right'>9am - 9pm</span>
+	      <br/>
+	      <span class='left'>Wednesday</span>
+	      <span class='right'>9am - 9pm</span>
+	      <br/>
+	      <span class='left'>Thursday</span>
+	      <span class='right'>9am - 10pm</span>
+	      <br/>
+	      <span class='left'>Friday</span>
+	      <span class='right'>9am - 9pm</span>
+	      <br/>
+	      <span class='left'>Saturday</span>
+	      <span class='right'>9am - 7pm</span>
+	      <br/>
+	      <span class='left'>Sunday/BH</span>
+	      <span class='right'>9am - 7pm</span>
+	      <br/>
+	    </div>
+	  </div>
+
+	<div class="info">
+		<ul>
+			<li>The NCI Shopping Centre has over 2000 free parking spaces surrounding the building. There are dedicated family spaces and disability spaces in convenient locations in each car park. Our extensive car parks are regularly patrolled by security, while being monitored by CCTV, to provide a safe and secure environment for our shoppers. Please note that parking at The NCI Shopping Centre is strictly for customers only! </li>
+			<li>You can now find directions from where you live to Mahon Point Shopping Centre by using the Route Planning tool on the AA Ireland website. Click here </li>
+			<li>GPS COORDINATES: 53.3487194,-6.2430615</li>
+			<li>Eircode: DO1 Y300 </li>
+		</ul>
+	</div>
+		<button class="collapsible"><b>Getting here by Car:</b></button>
+
+
+	<div class="content">
+		From the North side:
+		<p> &nbsp; </p> <!--was missing a semi colon this was captured by the validator-->
+			<div>Travel along Amiens Street</div>
+			<div>After train bridge, turn left onto Lower Sheriff St.</div>
+			<div>Follow road right onto Commons St.</div>
+			<div>At first set of traffic lights turn left onto Mayor St.</div>
+			<div>Continuing down Mayor St., turn right onto Alderman Way after the college</div>
+			<div>The NCI car park is on your right hand side.</div>
+			<br />
+			<br />
+	</div>
+
+	<button class="collapsible"><b>Getting here by Public Transport:</b></button>
+	<div class="content">
+  <div><strong>The Luas.</strong></div>
+<div>Luas Docklands Red Line stops right outside the main entrance to the college.</div>
+<div>Trains will run every 6 minutes from the Mayor Square/NCI stop.</div> <!--Incorrectly had the closing div tag missing the forward slash so the map was being caught in the collapsible tab-->
+<br />
+<br />
+For further information visit luas.ie
+<br />
+<br />
+
+<div><strong> Dart </strong></div>
+<div>Connolly Station and Pearse Street Station are within five minutes' walk of NCI. </div>
+<div>At peak times, the DART runs every 10 minutes.</div>
+
+</div>
+
+
+<script> <!--JS which runs the collapsible information tabs-->
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<br />
+<br />
+<div class="map_frame" id="map_canvas"><iframe src="https://maps.google.ie/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=National+College+of+Ireland,+Mayor+Street+Lower,+Dublin&amp;aq=0&amp;oq=national+&amp;sll=53.579461,-8.217773&amp;sspn=8.62839,21.994629&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=53.348729,-6.243568&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed" ></iframe><br />
+<small><a style="color: #0000ff; text-align: left;" href="https://maps.google.ie/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=National+College+of+Ireland,+Mayor+Street+Lower,+Dublin&amp;aq=0&amp;oq=national+&amp;sll=53.579461,-8.217773&amp;sspn=8.62839,21.994629&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=53.348729,-6.243568&amp;spn=0.006295,0.006295&amp;t=m">View Larger Map</a></small></div>
+
+<a id="link" href="https://www.google.ie/maps/place/National+College+of+Ireland/@53.3487194,-6.2430615,15z/data=!4m2!3m1!1s0x0:0x6d51b774ee7fa935?ved=2ahUKEwjkjYqh5IHfAhXHSRUIHcKyANgQ_BIwDnoECAYQCA" title="Google Map Link"><b> View The NCI Shopping Center on Google Maps</b></a>
+
+<hr />
+
+<p id="text">Open 7 days a week and <b>parking is completely free</b> at the NCI shopping center.</p>
+
+<br />
+<br />
+
+
+<h1>Where to find us:</h1>
+<p>NCI Shopping Center<br />
+Mayor Street<br />
+IFSC<br />
+Dublin 1</p>
+
+
+</div><script  src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+    google.load("maps", "3",  {other_params:"sensor=false"});
+
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(53.349475,-6.243389);
+        var myOptions = {
+            zoom: 14,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+        });
+    }
+
+    google.setOnLoadCallback(initialize);
+</script>
+
+
+
+</div>
+
+
+
+<!--footer, with how to find us and other-->
+<div class="container"></div>
+<div class="footer">
+
+		<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
+		<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
+		<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
+		<div class="col-sm-2"><a href="#Customer Services">Customer Services</a></div>
+		<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
+		<div class="col-sm-2"><a href="#Delivery & Collection">Delivery & Collection</a></div>
+
+</div>
+
+<hr />
+<p class="copyright">&copy; 2018 NCI Shopping Center<br />(Ireland) Limited </p> <!--making use of the charset for the copyright symbol-->
+
+</body>
+
+</html>
